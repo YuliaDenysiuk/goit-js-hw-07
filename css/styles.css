@@ -1,12 +1,22 @@
 #gallery {
   display: flex;
-  flex-wrap: wrap;
 
   list-style: none;
   padding-left: 0;
-  margin: 0;
+  margin: 20px;
 }
 
 .gallery__item {
-  margin-bottom: 30px;
+  display: block;
+  height: 100%;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.gallery__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
